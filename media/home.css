@@ -1,0 +1,65 @@
+#title, #subtitle {
+  color: #66004a;
+}
+#title, #subtitle, h2 {
+  text-align: center;
+}
+#content img {
+  display: block;
+  margin: 0px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+#title { margin-bottom: 0.3em; }
+#subtitle { margin-top: 0px; font-size: 130%; }
+
+#description p {
+  margin: 0px;
+  padding: 1em 0em;
+}
+
+#description h2 {
+  border-bottom: 1px solid #eee;
+  margin: 2em 0em 0em 0em;
+  padding-bottom: 0.3em;
+}
+
+a.fork {
+  background: url(forkme.png) top right no-repeat;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 141px;
+  height: 141px;
+}
+
+span.links {
+  text-align: center;
+  margin: 2.3em 0em 1.2em 0em;
+  display: block;
+}
+
+a.download {
+  color: #fff;
+  margin-left: 1em;
+  padding: 0.7em 2em;
+  text-decoration: none;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-box-shadow: 1px 2px 5px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 1px 2px 5px rgba(0,0,0,0.4);
+  background-image: linear-gradient(bottom, rgb(63,125,54), rgb(90,180,78));
+  background-image: -o-linear-gradient(bottom, rgb(63,125,54), rgb(90,180,78));
+  background-image: -moz-linear-gradient(bottom, rgb(63,125,54), rgb(90,180,78));
+  background-image: -webkit-linear-gradient(bottom, rgb(63,125,54), rgb(90,180,78));
+  background-image: -ms-linear-gradient(bottom, rgb(63,125,54), rgb(90,180,78));
+}
+
+a.download:hover {
+  background-image: linear-gradient(bottom, rgb(29,97,42), rgb(44,149,65));
+  background-image: -o-linear-gradient(bottom, rgb(29,97,42), rgb(44,149,65));
+  background-image: -moz-linear-gradient(bottom, rgb(29,97,42), rgb(44,149,65));
+  background-image: -webkit-linear-gradient(bottom, rgb(29,97,42), rgb(44,149,65));
+  background-image: -ms-linear-gradient(bottom, rgb(29,97,42), rgb(44,149,65));
+}

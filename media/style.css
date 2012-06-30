@@ -1,0 +1,108 @@
+body {
+  font-family: 'Helvetica Neu', 'Helvetica', sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+  color: #000;
+  margin: 0px;
+  background-color: #eee;
+}
+
+h1 {
+	font-size: 400%;
+	font-weight: 200;
+	color: #66004a;
+}
+
+h2 {
+	font-size: 150%;
+	font-weight: 400;
+	color: #66004a;
+	margin-top: 2em;
+	padding-bottom: 0.3em;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 0.5em;
+}
+
+h3 {
+	margin-top: 2.5em;
+	margin-bottom: 0.8em;
+}
+
+a { color: #058ac0; outline-style: none; }
+a:hover { color: #555; }
+a:link, a:visited { text-decoration: none; }
+a:hover, a:active { text-decoration: underline; }
+
+pre, code {
+	border: 1px solid #EAEAEA;
+	background-color: #F8F8F8;
+	border-radius: 3px;
+	padding: 0 5px;
+}
+
+pre {
+	border: 1px solid #CCC;
+	overflow: auto;
+	padding: 12px 14px;
+	line-height: 1.2em;
+	font-size: 80%;
+}
+
+code {
+	font-size: 80%;
+	margin: 0 2px;
+	white-space: nowrap;
+}
+
+pre > code {
+	font-size: 100%;
+	background: transparent;
+	border: none;
+	white-space: pre;
+	padding: 0px;
+	margin: 0px;
+}
+
+a:link, a:visited { text-decoration: none; }
+a:hover, a:active { text-decoration: underline; }
+
+#container {
+  min-width: 550px;
+  max-width: 1200px;
+  padding: 50px;
+  margin: 0px auto;
+}
+
+#container > div {
+  background-color: #fff;
+  position: relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+}
+
+#content {
+  padding: 40px 60px 80px 60px;
+  overflow: hidden;
+}
+
+.credits {
+  border-top: 1px solid #eee;
+  margin-top: 2.5em;
+  padding: 1em 0em;
+  color: #777;
+  font-size: 75%;
+  text-align: center;
+}
+
+@media screen and (max-device-width: 480px){
+  body { -webkit-text-size-adjust: 100%; }
+  h1 { font-size: 200%; }
+  #description p { padding: 0px; }
+  #description h2 { margin-bottom: 0.8em; }
+  #container { padding: 0px; min-width: 0px; }
+  #content { padding: 10px; }
+  a.fork { display: none; }
+  a.download { display: block; margin: 1em 2em; }
+}

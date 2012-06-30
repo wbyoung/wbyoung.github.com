@@ -1,0 +1,13 @@
+@import url(http://fonts.googleapis.com/css?family=Fugaz+One|Open+Sans:400,300);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+}
+
+#title, #subtitle, h2 {
+  font-family: 'Fugaz One', cursive;
+}
+h2 { text-transform: lowercase; font-variant: small-caps; }
+
+#subtitle { font-variant: normal; text-transform: lowercase; }
