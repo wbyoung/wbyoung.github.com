@@ -8,24 +8,40 @@ styles:
 
 # Whitney Young
 
-Whitney Young is the co-founder and lead developer at [FadingRed](http://www.fadingred.com/), a Mac and iOS software shop located in Chicago. He has been developing on the Mac platform for over 8 years, beginning with his first application, Senuti, a popular music recovery tool. After a short stint in the options trading world, Whitney left to pursue his longtime passion — creating simple, intuitive, and useful applications. These days he spends most of his time working on Koku, a simple and elegant personal finance app. He is also responsible for creating a computer security course at his alma mater, where he was able to hone his teaching skills. Today, Whitney leads his five person development team through the intricacies of Cocoa development while pursuing hobbies like cooking and biking along Lake Michigan.
+Whitney Young is the co-founder and lead developer at [FadingRed](http://www.fadingred.com/), a Mac and iOS software shop located in Chicago. He has been developing on the Mac platform for over 9 years, beginning with his first application, Senuti, a popular music recovery tool. After a short stint in the options trading world, Whitney left to pursue his longtime passion — creating simple, intuitive, and useful applications. These days he spends most of his time working on Koku, a simple and elegant personal finance app. He is also responsible for creating a computer security course at his alma mater, where he was able to hone his teaching skills. Today, Whitney leads his five person development team through the intricacies of Cocoa development while pursuing hobbies like cooking and biking along Lake Michigan.
 
-## CocoaConf DC
+## Recent Talks
 
-### Painless Localization
 
-In this session we will dive into the details of a new method for localizing applications. Localization in Cocoa has always been a bit of a chore, and as developers, we need this to change so we can focus our energy on writing code and producing great apps. Say goodbye to the days of fiddling with command line tools — this session will tackle simplifying the process of making applications localizable both for developers and translators. In the end, your apps will be painless to localize, and you will be able to ship to more people in their native languages.
+### Changing the Rules of the Game: Objective-C Runtime Manipulation
 
-<span class="links">
-<a href="/localization.pdf" class="download">Presentation Slides</a>
-<a href="https://github.com/fadingred/Greenwich" class="download">Source Code</a>
-</span>
+Much of the power behind Objective-C comes from its amazingly flexible runtime. The language exposes a rich feature set for manipulating classes, methods, and objects. All this power and flexibility is sometimes misunderstood, though. "Why would you ever need to add a method at runtime?" people ask. "Is that really a good idea?" Well of course it is! Without the runtime, many of the technologies that you take for granted every day would not be possible. Apple has leveraged the runtime heavily in Cocoa, and you should, too. Plus, it's just plain fun to tinker with every once and a while! In this session, you'll learn typical techniques that are used to manipulate the runtime and how to apply them in real world applications. Learn what makes the wheels turn, so you'll be able to bend the system and start looking at problems in a whole new way.
+
+#### Resources
+
+[Presentation Slides](/objective_c_runtime.pdf)  
+[Query Source Code](https://github.com/wbyoung/FRQuery)  
+[Mixin Source Code](https://github.com/wbyoung/FRModule)  
+
+[Objective-C Runtime Source](http://www.opensource.apple.com/tarballs/objc4/objc4-532.2.tar.gz) from Apple  
+[The Dangers of Method Swizzling](http://stackoverflow.com/questions/5339276/what-are-the-dangers-of-method-swizzling-in-objective-c/8636521#8636521) on StackOverflow  
+[Method Replacement](http://www.mikeash.com/pyblog/friday-qa-2010-01-29-method-replacement-for-fun-and-profit.html) by Mike Ash  
+[Method Swizzling](http://cocoadev.com/wiki/MethodSwizzling) on CocoaDev  
+[KVO Implementation](http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/KeyValueObserving/Articles/KVOImplementation.html#//apple_ref/doc/uid/20002307-BAJEAIEE) by Apple  
+[`objc_msgSend` Tour](http://www.friday.com/bbum/2009/12/18/objc_msgsend-part-1-the-road-map/) by Bill Bumgarner  
+[`imp_implementationWithBlock`](http://www.friday.com/bbum/2011/03/17/ios-4-3-imp_implementationwithblock/) by Bill Bumgarner  
+
 
 ### Getting to Know Core Data
 
-Maybe you've dipped your feet into the Core Data pool, or perhaps you've never used it before. At any rate, it's time to take your understanding to the next level. In this talk, we'll cover the basics of the framework and then dive into the details. We'll cover everything from getting started with Core Data to tuning and analyzing the performance of your apps. You'll walk away feeling well acquainted with Core Data and will have the confidence to effectively use it in various data-backed apps.
+Maybe you've dipped your feet into the Core Data pool, or perhaps you've never used it before. At any rate, it's time to solidify your understanding. In this talk, we'll cover the basics of the framework and then begin to discuss some of the details. We'll cover everything you need to know to get started with Core Data and clearly explain how all of the pieces fit together. You'll walk away feeling well acquainted with Core Data and will have the confidence to effectively use it in various data-backed apps.
 
-<span class="links">
-<a href="/core_data.pdf" class="download">Presentation Slides</a>
-<a href="https://github.com/wbyoung/CoreData" class="download">Source Code</a>
-</span>
+#### Resources
+
+[Presentation Slides](/core_data.pdf)  
+[Source Code](https://github.com/wbyoung/CoreData)  
+
+
+### Archive
+
+[2012](/2012)
