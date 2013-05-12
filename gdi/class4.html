@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Class 4 &ndash; JavaScript &ndash; Girl Develop It</title>
+    <meta name="description" content="This is the official Girl Develop It Core Intro JavaScript course. Material based on original material by Sara Chipps, Pamela Fox, Alexis Goldstein, Izzy Johnston and Leo Newball.
+    The course is meant to be taught in 4 two-hour sections. Each of the slides and practice files are customizable according to the needs of a given class or audience.">
+    <meta name="author" content="Girl Develop It">
+    <meta name="author" content="Girl Develop It">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="stylesheet" href="reveal/css/reveal.css">
+    <link rel="stylesheet" href="reveal/css/theme/gdisky.css" id="theme">
+    <link rel="stylesheet" href="reveal/lib/css/dark.css">
+    <!-- If use the PDF print sheet so students can print slides-->
+    <link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
+    <style type="text/css" media="screen">
+    .reveal span.note { font-size: 90%; color: #888; font-style: italic; padding-left: 0.3em; }
+    </style>
+    
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        
+        <!-- GDI -->
+        <section>
+          <img src="images/gdi_logo_badge.png">
+          <h3>Beginning JavaScript</h3>
+          <h4>Class 4</h4>
+        </section>
+        
+        <!-- Welcome-->
+        <section class="stack">
+          <section>
+            <h3>Welcome!</h3>
+            <div class="left-align">
+            <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+            </div>
+            <p class="green">Some "rules"</p>
+            <ul>
+              <li>We are here for you!</li>
+              <li>Every question is important</li>
+              <li>Help each other</li>
+              <li>Have fun</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Warning</h3>
+            <div>
+              The following few slides have lots of acronyms and jargon.
+            </div>
+            <div>On behalf of developers everywhere, we apologize.</div>
+          </section>
+        </section>
+        
+        <!-- What is an API-->
+        <section class="stack">
+          <section>
+            <h3>What is an API?</h3>
+            <ul>
+              <li class="fragment">Application Programming Interface</li>
+              <li class="fragment">Data structure and rules for accessing a web-based application</li>
+              <li class="fragment">How we can access information from sites that are not our own (Twitter, Meetup, Facebook, Foursquare)</li>
+            </ul>
+          </section>
+          <section>
+            <h3>What is an API?</h3>
+            <ul>
+              <li class="fragment">Primary role: a channel for applications to work together
+                <ul>
+                  <li class="fragment">Your website and the Twitter API</li>
+                  <li class="fragment">Twitter's mobile app and the Twitter API</li>
+                  <li class="fragment">Hootsuite's mobile app and the Twitter API</li>
+              </li>
+            </ul>
+          </section>
+        </section>
+        
+        <!-- What is AJAX-->
+        <section>
+          <h3>What is AJAX?</h3>
+          <ul>
+            <li class="fragment">Asynchronous JavaScript and XML</li>
+            <li class="fragment">Method to communicate to a server or API</li>
+            <li class="fragment">Asynchronous means:
+              <ul>
+                <li class="fragment">I ask Twitter for all the tweets ever!</li>
+                <li class="fragment">That will take a while</li>
+                <li class="fragment">My <em>whole website</em> could be <em>locked up</em> while I wait!</li>
+                <li class="fragment">Or, my call can be <em>asynchronous</em> and my website will just <em>listen for Twitter's response</em> with one ear, but go about <em>normal business until the response arrives</em>.
+              </ul>
+            </li>
+            <li class="fragment">Requests and results can be in JavaScript or XML</li>
+          </ul>
+        </section>
+        
+        <!-- What is REST-->
+        <section>
+          <h3>What is REST?</h3>
+          <ul>
+            <li class="fragment">Representational State Transfer</li>
+            <li class="fragment">REST is a way to ask an API for information by using a URL.</li>
+            <li class="fragment">REST Urls are created with the following syntax:
+              <ul>
+                <li class="fragment">http://ApiSite.com/method?parameter=value&amp;parameter=value</li>
+                <li class="fragment"><em>Method</em> &mdash; what you want from the API. Defined by API documentations</li>
+                <li class="fragment"><em>Parameter</em> &mdash; a type of filter or restraint. Defined by API documentations</li>
+                <li class="fragment"><em>Value</em> &mdash; value for parameter. Defined by you!</li>
+              </ul>
+            </li>
+            
+          </ul>
+        </section>
+        
+        <!-- Learn API-->
+        <section>
+          <h3>Where do I learn about an API?</h3>
+          <p>All (good) APIs have documentation</p>
+          <ul>
+            <li>Facebook (<a href="https://developers.facebook.com/" target="_blank">https://developers.facebook.com/</a>)</li>
+            <li>Twitter (<a href="https://dev.twitter.com/" target="_blank">https://dev.twitter.com/</a>)</li>
+            <li>Meetup (<a href="http://www.meetup.com/meetup_api/" target="_blank">http://www.meetup.com/meetup_api/</a>)</li>
+            <li>FourSquare (<a href="https://developer.foursquare.com/">https://developer.foursquare.com/</a>)</li>
+        </section>
+        
+        <!-- What is JSON-->
+        <section>
+          <h3>What is JSON?</h3>
+          <ul>
+            <li class="fragment">JavaScript Object Notation</li>
+            <li class="fragment">Format for data returned from APIs</li>
+            <li class="fragment">You've seen it before!</li>
+            <li class="fragment">JavaScript objects</li>
+          </ul>
+        </section>
+        
+        <!-- Getting started!-->
+        <section>
+         <h3>Getting started!</h3>
+         <p>Get an API Key</p>
+         <p class="fragment"><em>A what?</em></p>
+         <ul>
+           <li class="fragment">API Key or Developer Key is a way for an API to identify you</li>
+           <li class="fragment">More secure for an API (Know who is using their API)</li>
+           <li class="fragment">More secure for you &mdash; people can't pretend to be your website</li>
+          </ul>
+        </section>
+        
+        <!-- Meetup-->
+        <section class="stack">
+          <section>
+            <h3>Meetup API</h3>
+            <p>We will be using the Meetup API</p>
+            <p><a href="http://www.meetup.com/meetup_api/" target="_blank">Documentation</a></p>
+            <img src="images/meetup.png" />
+          </section>
+          <section>
+            <h3>Meetup API</h3>
+            <p>We will be finding interesting Meetups near us</p>
+            <p><a href="http://www.meetup.com/meetup_api/docs/2/open_events/" target="_blank">Open Events</a></p>
+            <img src="images/meetup_open.png"/>
+          </section>
+          <section>
+            <h3>Meetup API</h3>
+            <p>Try it in the meetup console</p>
+            <p><a href="http://www.meetup.com/meetup_api/console/?path=/2/open_events" target="_blank">Open Events Console</a></p>
+            <img src="images/meetup_console.png"/>
+          </section>
+          <section>
+            <h3>Meetup API</h3>
+            <p>Try it in the meetup console</p>
+            <img src="images/meetup_results.png"/>
+          </section>
+        </section>
+        
+        <!-- jQuery Ajax-->
+        <section class="stack">
+          <section>
+            <h3>jQuery Ajax</h3>
+            <p>jQuery method to perform an AJAX call</p>
+            <div class="fragment">
+              <pre><code class="javascript">
+      $.ajax({
+        url: 'http://site.com',
+        data: {
+          parameter: 'value',
+          parameter: 'value'
+        },
+        crossDomain: true,
+        dataType: 'jsonp',
+        type: "GET",
+        success: function (data) {
+            // code with data returned
+        },
+        error: function(data) {
+           // code with error returned
+        }        
+      });
+              </code></pre>
+            </div>
+          </section>
+          <section>
+            <h3>jQuery Ajax</h3>
+            <div class="fragment">
+              <pre><code class="javascript">
+      $.ajax({
+        url: 'http://site.com',
+        ...      
+      });
+              </code></pre>
+            </div>
+            <ul>
+              <li class="fragment"> $.ajax() &mdash; jQuery method for sending AJAX requests</li>
+              <li class="fragment">Takes one parameter &mdash; a JavaScript object</li>
+              <li class="fragment">Note the {}</li>
+              <li class="fragment"><em>url</em> &mdash; first property, the url where you will send the AJAX request</li>
+            </ul>
+          </section>
+          <section>
+            <h3>jQuery Ajax</h3>
+            <div class="fragment">
+              <pre><code class="javascript">
+      ...
+      data: {
+        parameter: 'value',
+        parameter: 'value'
+      },
+      ...
+              </code></pre>
+            </div>
+            <ul>
+              <li class="fragment"><code>data</code> &mdash; a JavaScript object with all the parameters for the AJAX request</li>
+              <li class="fragment">Some parameters in the <a href="http://www.meetup.com/meetup_api/docs/2/open_events/" target="_blank">Meetup open events</a>
+                <ul>
+                  <li>key (refers to api key)</li>
+                  <li>city</li>
+                  <li>country</li>
+                  <li>topic</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>jQuery Ajax</h3>
+            <div class="fragment">
+              <pre><code class="javascript">
+      ...
+      crossDomain: true,
+      dataType: 'jsonp',
+      type: "GET",
+      ...  
+              </code></pre>
+            </div>
+            <ul>
+              <li class="fragment"><code>crossDomain</code> &mdash; are you sending the request to a domain that is not your own?</li>
+              <li class="fragment"><code>dataType</code> &mdash; how will you evaluate the data returned</li>
+              <li class="fragment"><code>type</code> &mdash; what type of request is it?
+                <ul>
+                  <li>GET &mdash; retrieve data</li>
+                  <li>POST &mdash; post new data</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>jQuery Ajax</h3>
+            <div class="fragment">
+              <pre><code class="javascript">
+      ...
+      success: function (data) {
+        // code with data returned
+      },
+      error: function(data) {
+        // code with error returned
+      }
+      ...  
+              </code></pre>
+            </div>
+            <ul>
+              <li class="fragment"><code>success</code> &mdash; code that will execute if results are sent back successfully</li>
+              <li class="fragment"><code>error</code> &mdash; code that will execute if results return an error</li>
+            </ul>
+          </section>
+        </section>
+        
+        <!-- Exercise-->
+        <section class="stack">
+          <section>
+            <h3>Let's Develop It!</h3>
+            <ul>
+              <li>Create a new <code>div</code> with the id <em>events</em></li>
+              <li>Create a new function in your javascript that calls <a href="http://www.meetup.com/meetup_api/docs/2/open_events/" target="_blank">Meetup open events</a> method</li>
+              <li>Add parameters such as city, state or lat, lon to find meetups near you</li>
+              <li>Add a parameter such as category or topic to find meetups that you would be interested in</li>
+              <li>For now, just look at the results in the <code>console.log()</code></li>
+              <li>Call this new function in document ready</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Let's Develop It!</h3>
+            <img src="images/console.png"/>
+          </section>
+          <section>
+            <h3>Let's Develop It!</h3>
+            <ul>
+              <li>Create a new function that can parse results.</li>
+              <li>Remember that the results will be an array of objects</li>
+              <li>Loop through your results</li>
+              <li>For each result, create a new div</li>
+              <li>Get the name, description, group name, and url of each event</li>
+              <li>Append them to your new div</li>
+              <li>Append the new div to the div <em>events</em></li>
+            </ul>
+          </section>
+          <section>
+            <h3>Let's Develop It!</h3>
+            <ul>
+              <li>Create a form for users to enter in their location and a topic of their choosing</li>
+              <li>On submit, call the same Meetup open events method, but with the user's values</li>
+            </ul>
+          </section>
+        </section>
+        
+        <section>
+          <h3>Bonus</h3>
+          <em>Still have time? Can't stop learning?</em>
+          <div class="left-align">
+            <p>One of the best things about jQuery is the developer community</p>
+            <p>They love to build!</p>
+            <p>Check out some great plugins:</p>
+            <ul>
+              <li><a href="http://jqueryui.com/" target="_blank">jQuery UI</a> &mdash; accordions, drag and drop, resize, sort</li>
+              <li><a href="http://leandrovieira.com/projects/jquery/lightbox/" target="_blank">jQuery Lightbox</a> &mdash; Pop up gallery of images!</li>
+              <li><a href="http://www.jqueryplugins.com/" target="_blank">And so many more!</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Questions -->
+        <section>
+          <h2>Questions?</h2>
+          <div style="font-size:1000%; margin-top:16%" class ="blue">?
+            <div class="clear"></div>
+          </div>
+        </section>
+      </div>
+      
+      <footer>
+        <div class="copyright">
+          JavaScript &ndash; Girl Develop It Chicago
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="reveal/lib/js/head.min.js"></script>
+    <script src="reveal/js/reveal.min.js"></script>
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+         { src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+         { src: 'reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+         { src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+         { src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+         { src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+         { src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+    </script>
+  </body>
+</html>

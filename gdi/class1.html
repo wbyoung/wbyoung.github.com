@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Class 1 &ndash; JavaScript &ndash; Girl Develop It</title>
+    <meta name="description" content="This is the official Girl Develop It Core Intro JavaScript course. Material based on original material by Sara Chipps, Pamela Fox, Alexis Goldstein, Izzy Johnston and Leo Newball.
+      The course is meant to be taught in 4 two-hour sections. Each of the slides and practice files are customizable according to the needs of a given class or audience.">
+    <meta name="author" content="Girl Develop It">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="stylesheet" href="reveal/css/reveal.css">
+    <link rel="stylesheet" href="reveal/css/theme/gdisky.css" id="theme">
+    <link rel="stylesheet" href="reveal/lib/css/dark.css">
+    <!-- If use the PDF print sheet so students can print slides-->
+    <link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
+    <style type="text/css" media="screen">
+    .reveal span.note { font-size: 90%; color: #888; font-style: italic; padding-left: 0.3em; }
+    </style>
+    
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        
+        <!-- GDI -->
+        <section>
+          <img src="images/gdi_logo_badge.png">
+          <h3>Beginning JavaScript</h3>
+          <h4>Class 1</h4>
+        </section>
+        
+        <!-- Welcome-->
+        <section class="stack">
+          <section>
+            <h3>Welcome!</h3>
+            <div class="left-align">
+            <p>Girl Develop It is here to provide affordable and accessible programs to learn software through mentorship and hands-on instruction.</p>
+            </div>
+            <p class="green">Some "rules"</p>
+            <ul>
+              <li>We are here for you!</li>
+              <li>Every question is important</li>
+              <li>Help each other</li>
+              <li>Have fun</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Welcome!</h3>
+            <div>
+            <p class="blue">Tell us about yourself.</p>
+            <ul>
+              <li>Who are you?</li>
+              <li>What do you hope to get out of the class?</li>
+              <li>What is your favorite dinosaur?</li>
+            </ul>
+            </div>
+          </section>
+        </section>
+        
+        <!-- Terms-->
+        <section>
+         <h3>Terms</h3>
+         <ul>
+           <li class="fragment">
+            <em>Web design</em>: The process of planning, structuring and creating a website
+           </li>
+           <li class="fragment">
+            <em>Web development</em>: The process of programming dynamic web applications
+           </li>
+           <li class="fragment">
+            <em>Front end</em>: The outwardly visible elements of a website or application
+            <span class="note">JavaScript goes here!</span>
+           </li>
+           <li class="fragment">
+            <em>Back end</em>: The inner workings and functionality of a website or application.
+           </li>
+         </ul>
+        </section>
+        
+        <!-- Nitty gritty 1 - Clients and servers -->
+        <section>
+          <h3>Clients and servers</h3>
+          <p>How your computer accesses websites</p>
+          <img src="images/client-server.png"/>
+          <p class>JavaScript is <em>client side</em></p>
+          <p class>Your browser understands it!</p>
+        </section>
+        
+        <!-- Nitty gritty 2 - Tools -->
+        <section>
+          <h3>Tools</h3>
+          <ul>
+            <li>
+              <div class="yellow">Browser</div>
+              <div>Chrome</div>
+              <div>Firefox</div>
+             </li>
+             <li>
+              <div class="yellow">Development Toolkit</div>
+              <div>Chrome <span class="note">Inspector</span></div>
+              <div>Firefox <span class="note">Firebug</span></div>
+             </li>
+             <li>
+              <div class="yellow">Text Editor</div>
+              <div>TextWrangler <span class="note">Mac</span></div>
+              <div>Notepad ++ <span class="note">Windows</span></div>
+              <div>Sublime Text <span class="note">Mac &amp; Windows</span></div>
+             </li>
+          </ul>
+        </section>
+        
+        <!-- History-->
+        <section class="stack">
+          <section>
+            <h3>History of JavaScript</h3>
+            <ul>
+              <li class="fragment">Developed by Brendan Eich of Netscape in 1995</li>
+              <li class="fragment">Standardized in 1997</li>
+              <li class="fragment">Java &mdash; Actually JavaScript has nothing to do with the language Java. Java was just the cool kid in town at the time</li>
+              <li class="fragment">Script &mdash; Instructions that a computer can run one line at a time</li>
+            </ul>
+          </section>
+          <section>
+            <h3>History of JavaScript</h3>
+            <ul>
+              <li class="fragment">AJAX &mdash; a way to communicate to servers was created in 2005</li>
+              <li class="fragment">jQuery &mdash; a super-popular JavaScript Library 2006</li>
+              <li class="fragment">Node.js &mdash; a way for JavaScript to perform back end functions in 2010</li>
+              <li class="fragment">2012 &mdash; spec for JavaScript <em>nearly</em> finished</li>
+            </ul>
+          </section>
+        </section>
+        
+        <!--What does JavaScript do -->
+        <section>
+          <h3>What does JavaScript do?</h3>
+          <ul>
+            <li><a href="http://leandrovieira.com/projects/jquery/lightbox/" target = '_blank'>Image Galleries and Lightboxes</a></li>
+            <li><a href="https://www.google.com/doodles/30th-anniversary-of-pac-man" target = '_blank'>Games and all sorts of Google Doodles</a></li>
+            <li><a href="http://www.girldevelopit.com/materials" target = '_blank'>Interactions, like show/hide and accordians</a></li>
+            <li><a href="http://www.girldevelopit.com/classes" target = '_blank'>Retrieving data from other websites (through APIs)</a></li>
+            <li>All sorts of awesomeness, including this slideshow!</li>
+          </ul>
+        </section>
+        
+        <!--Statements -->
+        <section>
+          <h3>Statements/Script</h3>
+          <div>Each line in JavaScript is an instruction or a script</div>
+          <div>When the browser reads it, it <em>executes</em> the script</div>
+          <div>Try it out on <a href="http://repl.it/languages/JavaScript" target="_blank">repl.it</a></div>
+          <pre><code class="javascript">
+    console.log('Hello');
+          </code></pre>
+        </section>
+        
+        <!-- Variables-->
+        <section class="stack">
+          <section>
+            <h3>Variables</h3>
+            <p>Variables hold content</p>
+            <p>Words, numbers, true/false, basically any kind of content</p>
+            <br/>
+            <div class="fragment">
+              <p>Declare a variable (give it a name)</p>
+              <pre><code class="javascript">
+    var bananas;
+              </code></pre>
+            </div>
+            <div class="fragment">
+              <p>Initialize variable (give it a value)</p>
+              <pre><code class="javascript">
+    bananas = 5;
+              </code></pre>
+            </div>
+          </section>
+          <section>
+            <h3>Variables</h3>
+            <p>Declare and initialize at the same time!</p>
+            <pre><code class="javascript">
+    var bananas = 5;
+            </code></pre>
+            <div class="fragment">
+              <p>Change value of variable</p>
+              <pre><code class="javascript">
+    bananas = 4;
+              </code></pre>
+              <p>(I ate a banana)</p>
+            </div>
+          </section>
+        </section>
+        
+        <!-- Data Types-->
+        <section class="stack">
+          <section>
+            <h3>Data types</h3>
+            <p><code class="javascript">string</code> &mdash; a group of characters in quotes</p>
+            <pre><code class="javascript">
+    var fruit="banana";
+            </code></pre>
+            <div class="fragment">
+              <p><code class="javascript">number</code> &mdash; (well, a number)</p>
+              <pre><code class="javascript">
+    var pi = 3.14;
+    var year = 2012;
+              </code></pre>
+            </div>
+            <div class="fragment">
+              <p><code class="javascript">boolean</code> &mdash; yes or no</p>
+              <pre><code class="javascript">
+    var skyIsBlue = true;
+    var grassIsPink = false;
+              </code></pre>
+            </div>
+          </section>
+          <section>
+            <h3>Data types</h3>
+            <p><code class="javascript">undefined</code> &mdash; no value yet</p>
+            <pre><code class="javascript">
+    var favoriteDinosaur;
+            </code></pre>
+            <div class="fragment">
+              <p><code class="javascript">null</code> &mdash; a purposely empty value (not the same as 0)</p>
+              <pre><code class="javascript">
+    var myTigersName = null;
+              </code></pre>
+            </div>
+            <div class="fragment">
+              In nerd speak, JavaScript variables are <em>loosely typed</em>. You don't know the kind of value a variable will have until you assign it.
+            </div>
+          </section>
+        </section>
+        
+        <!-- Naming rules-->
+        <section>
+          <h3>Naming rules</h3>
+          <p>Begin with a letter, _, or $</p>
+          <p>Contain letters, numbers, _ and $</p>
+          <pre><code class="javascript">
+    var hello;
+    var _hello;
+    var $hello;
+    var hello2;
+          </code></pre>
+          <div class="fragment">
+            <p>Names are case sensitive</p>
+            <pre><code class="javascript">
+    var hello;
+    var Hello;
+    var heLLO;
+            </code></pre>
+          </div>
+        </section>
+        
+        <!-- Expressions -->
+        <section class="stack">
+          <section>
+            <h3>Expressions</h3>
+              <p>Math-y expressions!</p>
+              <pre><code class="javascript">
+    var bananas = 5;
+    var oranges = 2;
+    var fruit = bananas + oranges;
+              </code></pre>
+          </section>
+          <section>
+            <h3>Expressions</h3>
+            <p>Math-y expressions!</p>
+            <ul style="list-style: none;">
+              <li><code style="display: inline-block; width: 2em; text-align: right;"> +</code> Addition</li>
+              <li><code style="display: inline-block; width: 2em; text-align: right;"> -</code> Subtraction</li>
+              <li><code style="display: inline-block; width: 2em; text-align: right;"> *</code> Multiplication</li>
+              <li><code style="display: inline-block; width: 2em; text-align: right;"> /</code> Division</li>
+              <li><code style="display: inline-block; width: 2em; text-align: right;"> %</code> Modulus</li>
+              <li><code style="display: inline-block; width: 2em; text-align: right;">++</code> Increment</li>
+              <li><code style="display: inline-block; width: 2em; text-align: right;">--</code> Decrement</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Expressions</h3>
+            <p>Word-y expressions!</p>
+            <pre><code class="javascript">
+    var name = "Mitch";
+    var dinosaur = "Stegosaurus";
+    var sentence = "My dinosaur is a " + dinosaur + 
+      ". It's name is " + name + ".";
+            </code></pre>
+          </section>
+        </section>
+        
+        <!-- Exercise-->
+        <section class="stack">
+          <section>
+            <h3>Let's Develop It</h3>
+            <p>Create a new html file</p>
+            <pre><code class="html">
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;title&gt;My Site!&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        My site!
+      &lt;/body&gt;
+    &lt;/html&gt;
+            </code></pre>
+          </section>
+          <section>
+            <h3>Let's Develop It</h3>
+            <p>Create a new javascript file (a file that ends in <code>.js</code>)</p>
+            <p>Link it to your html file</p>
+            <pre><code class="html">
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;title&gt;My Site!&lt;/title&gt;
+        &lt;script src="myjavascriptfile.js"&gt;&lt;/script&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+        My site!
+      &lt;/body&gt;
+    &lt;/html&gt;
+            </code></pre>
+          </section>
+          <section>
+            <h3>Let's Develop It</h3>
+            <p>Life time supply calculator</p>
+            <p>Ever wonder how much a lifetime supply of your favorite snack or drink is?</p>
+          </section>
+          <section>
+            <h3>Let's Develop It</h3>
+            <ul>
+              <li>Store your age in a variable</li>
+              <li>Store your maximum in a variable</li>
+              <li>Store an estimated amount per day in a variable</li>
+              <li>Calculate how many you would eat/drink for the rest of your life.</li>
+              <li>
+                Use <code class="javascript">alert(answer)</code> to display:<br/>
+                <code style="font-size: 80%;">You will need NN to last you until your old age of NN</code>
+              </li>
+            </ul>
+          </section>
+        </section>
+        
+        <!-- If statement-->
+        <section>
+          <h3>The if statement</h3>
+          <p>JavaScript can run through code based on conditions</p>
+          <div class="fragment">
+            <pre><code class="javascript">
+    if (condition here){
+      // statement to execute
+    }
+            </code></pre>
+          </div>
+          <div class="fragment">
+            <pre><code class="javascript">
+    var bananas = 1;
+    if (bananas < 2){
+      console.log("You should buy more bananas!")
+    }
+            </code></pre>
+          </div>
+          <div class="fragment">
+            <span class="note">You can write comments that only you, not the browser reads</span>
+            <pre><code class="javascript">
+    // comment on one line
+    /* comment on 
+     * multiple lines */
+             </code></pre>
+          </div>
+        </section>
+        
+        <!-- Comparison-->
+        <section class="stack">
+          <section>
+            <h3>Comparisons</h3>
+            <ul style="list-style: none;">
+              <li class="fragment"><code style="display: inline-block; width: 4em; text-align: right;">===</code> Equality</li>
+              <li class="fragment"><code style="display: inline-block; width: 4em; text-align: right;">!==</code> Inequality</li>
+              <li class="fragment"><code style="display: inline-block; width: 4em; text-align: right;"> &gt; </code> Greater than</li>
+              <li class="fragment"><code style="display: inline-block; width: 4em; text-align: right;"> &gt;=</code> Greater than or equal to</li>
+              <li class="fragment"><code style="display: inline-block; width: 4em; text-align: right;"> &lt;</code> Less than</li>
+              <li class="fragment"><code style="display: inline-block; width: 4em; text-align: right;"> &lt;=</code>  Less than or equal to</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Comparisons</h3>
+            <p class="green"> Don't confuse = (assign a value) <br/>with === (compare a value)</p>
+          </section>
+        </section>
+        
+        <!-- Logic-->
+        <section class="stack">
+          <section>
+            <h3>Logic</h3>
+            <ul style="list-style: none; padding-right: 2em;">
+              <li class="fragment"><code style="display: inline-block; width: 2em; text-align: right;">&amp;&amp;</code> &nbsp;&nbsp;&nbsp;and</li>
+              <li class="fragment"><code style="display: inline-block; width: 2em; text-align: right;">||</code> &nbsp;&nbsp;&nbsp;or</li>
+              <li class="fragment"><code style="display: inline-block; width: 2em; text-align: right;"> !</code> &nbsp;&nbsp;&nbsp;not</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Logic</h3>
+            <pre><code class="javascript">
+    var bananas = 5;
+    var oranges = 2;
+    if (bananas > 3 && oranges > 3){
+      console.log('Eat fruit!');
+    }
+    if (bananas < 2 || oranges < 2){
+      console.log('Buy fruit!');
+    }
+    if (!(bananas >= 0)){
+      console.log('How do you have negative bananas?');
+    }
+            </code></pre>
+          </section>
+        </section>
+        
+        <!-- If/else-->
+        <section class="stack">
+          <section>
+            <h3>If/Else Statement</h3>
+            <p>You can use else to perform an alternative action if the <code class="javascript">if</code> fails</p>
+            <pre><code class="javascript">
+    var bananas = 5;
+    if (bananas > 3){
+      console.log('Eat a banana!');
+    } else {
+      console.log('Buy a banana!');
+    }
+            </code></pre>
+          </section>
+          <section>
+            <h3>If/Else Statement</h3>
+            <p>You can use else if to have multiple choices</p>
+            <pre><code class="javascript">
+    var age = 20;
+    if (age >= 35) {
+      console.log('You can vote AND hold any place in government!');
+    } else if (age >= 25) {
+      console.log('You can vote AND run for the Senate!');
+    } else if (age >= 18) {
+      console.log('You can vote!');
+    } else {
+      console.log('You have no voice in government (yet)!');
+    }
+            </code></pre>
+          </section>
+        </section>
+        
+        <!-- Exercise-->
+        <section>
+            <h3>Let's Develop It!</h3>
+            <p class="left-align">Add an <code class="javascript">if</code>/<code class="javascript">else</code> statement to our lifetime supply calculator so that if the lifetime supply is greater than 40,000, you say <code class="javascript">"Wow! That's a lot!"</code><br/><br/>Otherwise, say <code class="javascript">"You seem pretty reasonable!"</code></p>
+        </section>
+        
+        <!-- Functions-->
+        <section class="stack">
+          <section>
+            <h3>Functions</h3>
+            <p>Functions are re-usable collections of statements</p>
+            <div class="fragment">
+              Declare a function
+           <pre><code class="javascript">
+    function sayHi(){
+      console.log('Hi!');
+    }
+            </code></pre>
+            </div>
+            <div class="fragment">
+              Call the function
+           <pre><code class="javascript">
+    sayHi();
+            </code></pre>
+            </div>
+          </section>
+          <section>
+            <h3>Arguments</h3>
+            <p>Functions can take named arguments</p>
+            <div class="fragment">
+           <pre><code class="javascript">
+    function sayHi(name){
+      console.log('Hi' + name + '!');
+    }
+    sayHi('Mitch, the dinosaur');
+    sayHi('Harold, the hippo');
+    
+    var name = 'Pip, the mouse';
+    sayHi(name);
+            </code></pre>
+            </div>
+          </section>
+          <section>
+            <h3>Arguments</h3>
+            <p>Functions can take <em>multiple</em> named arguments</p>
+            <div class="fragment">
+           <pre><code class="javascript">
+    function addNumbers(num1, num2){
+      var result = num1 + num2;
+      console.log(result);
+    }
+    
+    addNumbers(5, 6);
+    
+    var number1 = 12;
+    var number2 = 15;
+    addNumbers(number1, number2);
+              </code></pre>
+            </div>
+          </section>
+          <section>
+            <h3>Return values</h3>
+            <p>Functions can return a value</p>
+            <div class="fragment">
+              <pre><code class="javascript">
+    function addNumbers(num1, num2){
+      var result = num1 + num2;
+      return result; //Anything after this line won't be read
+    }
+    var sum  = addNumbers(5, 6);
+              </code></pre>
+            </div>
+          </section>
+          <section>
+            <h3>Variable Scope</h3>
+            <p>JavaScript variables have <em>function scope</em>. They are visible in the function where they are defined</p>
+            <div class="fragment">
+              A variable with <em>local</em> scope:
+              <pre><code class="javascript">
+    function addNumbers(num1, num2){
+      var result = num1 + num2;
+      return result; //Anything after this line won't be read
+    }
+    var sum  = addNumbers(5, 6);
+    console.log(result); //will return undefined because result only exists inside the addNumbers function
+              </code></pre>
+            </div> 
+          </section>
+          <section>
+            <h3>Variable Scope</h3>
+            <p>JavaScript variables have <em>function scope</em>. They are visible in the function where they are defined</p>
+            <div class="fragment">
+              A variable with <em>global</em> scope:
+              <pre><code class="javascript">
+    var result;
+    function addNumbers(num1, num2){
+      result = num1 + num2;
+      return result; //Anything after this line won't be read
+    }
+    var sum  = addNumbers(5, 6);
+    console.log(result); //will return 11 because the variable was defined outside the function
+              </code></pre>
+            </div>
+          </section>
+        </section>
+        
+        <!-- Exercise-->
+        <section>
+          <h3>Let's Develop It</h3>
+          <div>
+            <p>Wrap the lifetime supply calculator in a function called <code class="javascript">calculate()</code></p>
+            <p>Add a link to the html that calls the function when it is clicked</p>
+            <pre><code class="html">
+    &lt;a href="#" onclick="calculate()">
+    Calculate life time supply
+    &lt;/a>
+            </code></pre>
+          </div>
+        </section>
+        
+        <!-- Questions -->
+        <section>
+          <h2>Questions?</h2>
+          <div style="font-size:1000%; margin-top:16%" class ="blue">?
+            <div class="clear"></div>
+          </div>
+        </section>
+      </div>
+      
+      <footer>
+        <div class="copyright">
+          JavaScript &ndash; Girl Develop It Chicago
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="reveal/lib/js/head.min.js"></script>
+    <script src="reveal/js/reveal.min.js"></script>
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+         { src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+         { src: 'reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+         { src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+         { src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+         { src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+         { src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+    </script>
+  </body>
+</html>

@@ -10,8 +10,18 @@ styles:
 
 Whitney Young is the co-founder and lead developer at [FadingRed](http://www.fadingred.com/), a Mac and iOS software shop located in Chicago. He has been developing on the Mac platform for over 9 years, beginning with his first application, Senuti, a popular music recovery tool. After a short stint in the options trading world, Whitney left to pursue his longtime passion — creating simple, intuitive, and useful applications. These days he spends most of his time working on Koku, a simple and elegant personal finance app. He is also responsible for creating a computer security course at his alma mater, where he was able to hone his teaching skills. Today, Whitney leads his five person development team through the intricacies of Cocoa development while pursuing hobbies like cooking and biking along Lake Michigan.
 
-## Recent Talks
+## Recent Talks and Classes
 
+### Girl Develop It Chicago &mdash; JavasScript
+
+Core Intro Javascript course for [Girl Develop It](http://www.girldevelopit.com).
+
+#### Resources
+
+[Class 1 Slides](/gdi/class1.html)  
+[Class 2 Slides](/gdi/class2.html)  
+[Class 3 Slides](/gdi/class3.html)  
+[Class 4 Slides](/gdi/class4.html)  
 
 ### Changing the Rules of the Game: Objective-C Runtime Manipulation
 
