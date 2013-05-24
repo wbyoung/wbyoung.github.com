@@ -18,8 +18,8 @@ Core Intro Javascript course for [Girl Develop It](http://www.girldevelopit.com)
 
 #### Resources
 
-[Class 1 Slides](/gdi/class1.html), [Assignment](/gdi/assignments/class1/assignment.zip)  
-[Class 2 Slides](/gdi/class2.html)  
+[Class 1 Slides](/gdi/class1.html), [Assignment](/gdi/assignments/class1/assignment.zip), [Solution](/gdi/assignments/class1/solution.zip)  
+[Class 2 Slides](/gdi/class2.html), [Assignment](/gdi/assignments/class2/assignment.zip), [Class Files](/gdi/assignments/class2/class2.zip)  
 [Class 3 Slides](/gdi/class3.html)  
 [Class 4 Slides](/gdi/class4.html)  
 
