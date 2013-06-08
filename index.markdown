@@ -21,7 +21,7 @@ Core Intro Javascript course for [Girl Develop It](http://www.girldevelopit.com)
 [Class 1 Slides](/gdi/class1.html), [Assignment](/gdi/assignments/class1/assignment.zip), [Solution](/gdi/assignments/class1/solution.zip)  
 [Class 2 Slides](/gdi/class2.html), [Assignment](/gdi/assignments/class2/assignment.zip), [Solution](/gdi/assignments/class2/solution.zip), [Class Files](/gdi/assignments/class2/class2.zip)  
 [Class 3 Slides](/gdi/class3.html), [Assignment](/gdi/assignments/class3/assignment.zip), [Class Files](/gdi/assignments/class3/class3.zip)  
-[Class 4 Slides](/gdi/class4.html)  
+[Class 4 Slides](/gdi/class4.html), [Class Files](/gdi/assignments/class4/class4.zip)  
 
 ### Changing the Rules of the Game: Objective-C Runtime Manipulation
 
