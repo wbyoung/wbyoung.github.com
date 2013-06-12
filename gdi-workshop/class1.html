@@ -33,6 +33,174 @@
           <h4>Class 1</h4>
           <p><a href="http://wbyoung.github.io/" style="line-height: 1.3em;">wbyoung.github.io</a></p>
         </section>
+
+        <!-- concepts overview -->
+        <section class="stack">
+          <section>
+            <h3>Anatomy of a website</h3>
+            <p>Your Content</p>
+            <p>+ HTML: Structure</p>
+            <p>+ CSS: Presentation</p>
+            <p>= Your Website</p>
+          </section>
+        </section>
+        
+        <!-- HTML overview -->
+        <section class="stack">
+          <section>
+            <h3>HTML File</h3>
+            <pre><code class="html">
+              &lt;html>
+                &lt;head>
+                  ...info for the browser...
+                &lt;/head>
+
+                &lt;body>
+                  ...info for your users...
+                &lt;/body>
+              &lt;/html>
+            </code></pre>
+          </section>
+        </section>
+        
+        <!-- head -->
+        <section class="stack">
+          <section>
+            <h3>head</h3>
+            <pre><code class="html">
+      &lt;head>
+        &lt;title>My Website&lt;/title>
+        &lt;link rel="stylesheet" href="theme.css">
+        &lt;script type="text/javascript" src="effects.js">&lt;/script>
+      &lt;/head>
+            </code></pre>
+          </section>
+        </section>
+        
+        <!-- body -->
+        <section class="stack">
+          <section>
+            <h3>body</h3>
+            <div>
+           <pre><code class="html">
+    &lt;body>
+      &lt;h1>headings&lt;/h1>
+      
+      &lt;p>
+        paragraphs with &lt;em>emphasis&lt;/em> and&lt;br />
+        &lt;strong>importance&lt;/strong> and &amp;copy; character codes
+      &lt;/p>
+
+      &lt;ul>
+        &lt;li>lists&lt;/li>
+        &lt;li>of&lt;/li>
+        &lt;li>things&lt;/li>
+      &lt;/ul>
+
+      &lt;table>
+        &lt;tr>
+          &lt;th>table&lt;/th>
+          &lt;th>headings&lt;/th>
+        &lt;/tr>
+        &lt;tr>
+          &lt;td>and&lt;/td>
+          &lt;td>data&lt;/td>
+        &lt;/tr>
+      &lt;table>
+        
+      &lt;img src="images/logo.png" /> image with relative src
+      &lt;a href="http://google.com">a link with absolute href&lt;/a>
+
+      &lt;!-- dashes for comments -->
+
+    &lt;/body>
+            </code></pre>
+            </div>
+          </section>
+        </section>
+        
+        <!-- tag inspection -->
+        <section class="stack">
+          <section>
+            <h3>HTML Tag</h3>
+            <pre><code class="html">
+    &lt;p id="hello" class="greeting important">Hello, and welcome!&lt;/p>
+            </code></pre>
+          </section>
+        </section>
+
+        <!-- css rule inspection w/ example -->
+        <section class="stack">
+          <section>
+            <h3>css rule</h3>
+            <pre><code class="html">
+    &lt;p id="hello" class="greeting important">Hello, and welcome!&lt;/p>
+  </code></pre>
+            <pre><code class="css">
+    .greeting {
+      background: red;
+      color: green;
+    }
+            </code></pre>
+            <div class="fragment">
+              <p style="font-size: 48px; background:red; font-weight: bold; color: green">Hello, and welcome!</p>
+            </div>
+          </section>
+        </section>
+
+        <!-- css rule specificity w/ example -->
+        <section class="stack">
+          <section>
+            <h3>rule specificity</h3>
+            <pre><code class="html">
+    &lt;p id="hello" class="greeting important">Hello, and welcome!&lt;/p>
+  </code></pre>
+            <pre><code class="css">
+    .greeting {
+      background: red;
+      color: green;
+    }
+
+    #hello {
+      color: purple;
+    }
+            </code></pre>
+            <div class="fragment">
+              <p style="font-size: 48px; background:red; font-weight: bold; color: purple">Hello, and welcome!</p>
+            </div>
+          </section>
+        </section>
+
+        <!-- filesystem -->
+        <section class="stack">
+          <section>
+            <h3>project organization</h3>
+            <ul>
+              <li>In its own folder</li>
+              <li>Filenames: no spaces</li>
+              <li>Subfolders: logical groupings</li>
+            </ul>
+            <pre><code class="no-highlight" style="color: white;">
+   - slideshow
+      gallery.html
+      about_me.html
+      contact.html
+      - stylesheets
+         theme.css
+      - images
+         elephant.jpg
+         giraffe.jpg
+         rhino.jpg
+            </code></pre>
+          </section>
+        </section>
+
+        <!-- wrap up -->
+        <section class="stack">
+          <section>
+            <h1>Next: javascript!</h1>
+          </section>
+        </section>
         
         <!-- Objects-->
         <section class="stack">
