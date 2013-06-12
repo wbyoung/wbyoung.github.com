@@ -12,6 +12,14 @@ Whitney Young is the co-founder and lead developer at [FadingRed](http://www.fad
 
 ## Recent Talks and Classes
 
+### Girl Develop It Chicago &mdash; Web Projects
+
+Javascript & HTML Workshop for [Girl Develop It](http://www.girldevelopit.com).
+
+#### Resources
+
+[Class 1 Slides](/gdi-workshop/class1.html), [Class Files](/gdi-workshop/resources/example.zip)  
+
 ### Girl Develop It Chicago &mdash; JavasScript
 
 Core Intro Javascript course for [Girl Develop It](http://www.girldevelopit.com).

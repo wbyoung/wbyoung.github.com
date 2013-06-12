@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Class 1 &ndash; JavaScript &ndash; Girl Develop It</title>
+    <meta name="description" content="This is the official Girl Develop It Core Intro JavaScript course. Material based on original material by Sara Chipps, Pamela Fox, Alexis Goldstein, Izzy Johnston and Leo Newball.
+      The course is meant to be taught in 4 two-hour sections. Each of the slides and practice files are customizable according to the needs of a given class or audience.">
+    <meta name="author" content="Girl Develop It">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="stylesheet" href="reveal/css/reveal.css">
+    <link rel="stylesheet" href="reveal/css/theme/gdisky.css" id="theme">
+    <link rel="stylesheet" href="reveal/lib/css/dark.css">
+    <!-- If use the PDF print sheet so students can print slides-->
+    <link rel="stylesheet" href="reveal/css/print/pdf.css" type="text/css" media="print">
+    <style type="text/css" media="screen">
+    .reveal span.note { font-size: 90%; color: #888; font-style: italic; padding-left: 0.3em; }
+    </style>
+    
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        
+        <!-- GDI -->
+        <section>
+          <img src="images/gdi_logo_badge.png" width="400" height="400">
+          <h3>Web Projects Workshop</h3>
+          <h4>Class 1</h4>
+          <p><a href="http://wbyoung.github.io/" style="line-height: 1.3em;">wbyoung.github.io</a></p>
+        </section>
+        
+        <!-- Objects-->
+        <section class="stack">
+          <section>
+            <h3>Objects</h3>
+            <pre><code class="javascript">
+      var person = {
+        age: 16,
+        name: "Whitney Young",
+        interests: ["lacrosse", "computers"],
+      };
+            </code></pre>
+            <pre><code class="javascript">
+      var age = person.age;
+      var age = person['age'];
+            </code></pre>
+            <pre><code class="javascript">
+      person.name = "Whit";
+      person['name'] = "Whit";
+            </code></pre>
+          </section>
+        </section>
+        
+        <!-- Arrays -->
+        <section class="stack">
+          <section>
+            <h3>Arrays</h3>
+            <pre><code class="javascript">
+      var people = [ person0, person1, person2, person3 ];
+            </code></pre>
+            <pre><code class="javascript">
+      var firstPerson = people[0];
+      var lastPerson = people[3];
+            </code></pre>
+            <pre><code class="javascript">
+      people[0] = differentPerson;
+            </code></pre>
+            <pre><code class="javascript">
+      people.push(newPerson);
+            </code></pre>
+          </section>
+        </section>
+        
+        <!-- Loops-->
+        <section class="stack">
+          <section>
+            <h3>For Loops</h3>
+            <pre><code class="javascript">
+      var people = [ ... ];
+      
+      for (var i = 0; i &lt; people.length; i++) {
+        var person = people[i];
+        console.log(person);
+      }
+            </code></pre>
+          </section>
+        </section>
+        
+        <!-- Functions-->
+        <section class="stack">
+          <section>
+            <h3>Functions</h3>
+            <p>Functions are re-usable collections of statements</p>
+            <div>
+           <pre><code class="javascript">
+    function describePerson(person) {
+      console.log(person.name + ' is ' +
+                  person.age + ' years old and likes ' +
+                  person.interests);
+    }
+            </code></pre>
+            </div>
+            <div>
+           <pre><code class="javascript">
+    describePerson(personVariable);
+            </code></pre>
+            </div>
+          </section>
+        </section>
+        
+        <!-- Troubleshooting-->
+        <section class="stack">
+          <section>
+            <h3>Troubleshooting</h3>
+            <ul>
+              <li class="fragment">Go slow</li>
+              <li class="fragment">Proper indentation</li>
+              <li class="fragment">Back up your progress</li>
+              <li class="fragment">Use developer tools</li>
+            </ul>
+          </section>
+        </section>
+        
+        <!-- Get Started-->
+        <section class="stack">
+          <section>
+            <h1>Get Started!</h1>
+          </section>
+        </section>
+        
+        <footer>
+        <div class="copyright">
+          JavaScript &ndash; Girl Develop It Chicago
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+        </div>
+      </footer>
+    </div>
+    
+    <script src="reveal/lib/js/head.min.js"></script>
+    <script src="reveal/js/reveal.min.js"></script>
+    <script>
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+         { src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+         { src: 'reveal/plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+         { src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+         { src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+         { src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+         { src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+    </script>
+  </body>
+</html>

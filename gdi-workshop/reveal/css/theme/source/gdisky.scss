@@ -1,0 +1,44 @@
+// Default mixins and settings
+@import "../template/mixins";
+@import "../template/settings";
+
+// Import custom fonts
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+$mainFont: "Open Sans", sans-serif;
+$mainFontSize: 36px;
+$mainColor: #333;
+$headingFont: "Quicksand", sans-serif;
+$headingColor: #333;
+$headingLineHeight: 0.9em;
+$headingLetterSpacing: -5px;
+$headingTextTransform: uppercase;
+$headingTextShadow: none;
+$heading1TextShadow: none;
+$linkColor: #3b759e;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: lighten( $linkColor, 20% );
+$selectionColor: #fff;
+
+// Background
+@mixin bodyBackground() {
+	@include radial-gradient( rgba(173,217,228,1), rgba(247,251,252,1) );
+}
+
+// Theme template
+@import "../template/theme";
+
+// Override theme settings
+.reveal section img {
+	border: none;
+	box-shadow: none;
+}
+.blue{color:$linkColor }
+.green{color:$linkColor}
+.yellow{color:$linkColor}
+.pink{color:$linkColor}
+.red{color:$linkColor}
+.reveal ul li { margin: 0.4em 0px; }
