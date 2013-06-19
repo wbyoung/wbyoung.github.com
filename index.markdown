@@ -20,6 +20,7 @@ Javascript & HTML Workshop for [Girl Develop It](http://www.girldevelopit.com).
 
 [Class 1 Slides](/gdi-workshop/class1.html), [Class Files](/gdi-workshop/resources/example.zip)  
 [Foursquare Example](/gdi-foursquare/)  
+[AJAX Starter Code](/gdi/ajax_start.zip)  
 
 ### Girl Develop It Chicago &mdash; JavasScript
 
